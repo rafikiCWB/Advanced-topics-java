@@ -1,0 +1,29 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+interface Animal
+'abstract Pessoa
+'enum cor
+
+class Repteis implements Animal {
+     -nome: String
+     +setNome(String nome):void
+     +getNome():String
+}
+
+
+class Mamifero implements Animal {
+   +id: Long
+   -nome: String
+   +getNome():String
+   +setNome(String nome):void
+}
+class Dog extends Animal{
+    +makeSound():String
+}
+class Cat extends Animal{
+    +makeSound():String
+}
+
+
+@endboard

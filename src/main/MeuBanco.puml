@@ -1,0 +1,20 @@
+@startuml
+
+entity User {
+    * id: INT
+    * name: VARCHAR(255)
+    * email: VARCHAR(255)
+}
+
+entity Post {
+    * id: INT
+    * title: VARCHAR(255)
+    * content: TEXT
+    * user_id: INT
+}
+
+User ||--o Post
+
+
+
+@enduml
